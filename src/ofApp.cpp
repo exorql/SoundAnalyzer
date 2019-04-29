@@ -31,7 +31,7 @@ void ofApp::update(){
     // ノイズ生成
     int tmpIndex;
     // 低域
-    ofPixelsRef lowPixels = lowNoiseImg.getPixelsRef();
+    ofPixelsRef lowPixels = lowNoiseImg.getPixels();
     tmpIndex = 0;
     for(int y=0; y < lowNoiseImg.getHeight(); y++) {
         for(int x=0; x < lowNoiseImg.getWidth(); x++) {
@@ -43,7 +43,7 @@ void ofApp::update(){
     lowNoiseImg.update();
     
     // 中域
-    ofPixelsRef midPixels = midNoiseImg.getPixelsRef();
+    ofPixelsRef midPixels = midNoiseImg.getPixels();
     tmpIndex = 0;
     for(int y=0; y < midNoiseImg.getHeight(); y++) {
         for(int x=0; x < midNoiseImg.getWidth(); x++) {
@@ -55,7 +55,7 @@ void ofApp::update(){
     midNoiseImg.update();
     
     // 高域
-    ofPixelsRef highPixels = highNoiseImg.getPixelsRef();
+    ofPixelsRef highPixels = highNoiseImg.getPixels();
     tmpIndex = 0;
     for(int y=0; y < highNoiseImg.getHeight(); y++) {
         for(int x=0; x < highNoiseImg.getWidth(); x++) {
